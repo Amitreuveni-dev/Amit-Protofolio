@@ -35,6 +35,7 @@ const PROJECTS_DATA: Project[] = [
     technologies: ['React', 'TypeScript', 'Local Storage', 'CSS Animations'],
     Icon: Gamepad2,
     githubUrl: 'https://github.com/amitr/wordle',
+    liveUrl: "https://wordle-hn9f.onrender.com",
     gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
   },
   {
