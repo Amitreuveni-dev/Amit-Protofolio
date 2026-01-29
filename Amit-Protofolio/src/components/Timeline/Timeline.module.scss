@@ -4,6 +4,14 @@
   padding: var(--spacing-3xl) 0;
   background-color: var(--color-bg-secondary);
   @include scroll-section;
+
+  // Modern gradient for light theme
+  [data-theme='light'] & {
+    background:
+      radial-gradient(ellipse 100% 50% at 0% 50%, rgba(79, 70, 229, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse 100% 50% at 100% 50%, rgba(139, 92, 246, 0.04) 0%, transparent 50%),
+      var(--color-bg-secondary);
+  }
 }
 
 .container {

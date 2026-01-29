@@ -54,41 +54,47 @@
   --container-padding: var(--spacing-md);
 }
 
-// Light Theme (Default)
+// Light Theme (Default) - Modern & Refined
 :root,
 [data-theme='light'] {
-  // Primary Colors
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
-  --color-primary-light: #dbeafe;
+  // Primary Colors - Vibrant blue with depth
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-light: rgba(79, 70, 229, 0.1);
 
-  // Background Colors
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8fafc;
-  --color-bg-tertiary: #f1f5f9;
+  // Background Colors - Subtle warm/cool tints for depth
+  --color-bg-primary: #fafbff;
+  --color-bg-secondary: #f0f4ff;
+  --color-bg-tertiary: #e8edff;
 
   // Text Colors
-  --color-text-primary: #0f172a;
-  --color-text-secondary: #475569;
-  --color-text-tertiary: #94a3b8;
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #4a4a68;
+  --color-text-tertiary: #8888a4;
   --color-text-inverse: #ffffff;
 
-  // Border Colors
-  --color-border: #e2e8f0;
-  --color-border-hover: #cbd5e1;
+  // Border Colors - Softer with slight color
+  --color-border: rgba(79, 70, 229, 0.12);
+  --color-border-hover: rgba(79, 70, 229, 0.25);
 
   // Accent Colors
   --color-accent: #8b5cf6;
-  --color-accent-olive: #65a30d;
+  --color-accent-olive: #10b981;
 
   // Status Colors
-  --color-success: #22c55e;
+  --color-success: #10b981;
   --color-error: #ef4444;
   --color-warning: #f59e0b;
   --color-info: #3b82f6;
 
   // Focus
-  --color-focus-ring: rgba(37, 99, 235, 0.5);
+  --color-focus-ring: rgba(79, 70, 229, 0.4);
+
+  // Modern Shadows - Colored shadows for depth
+  --shadow-sm: 0 1px 3px rgba(79, 70, 229, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(79, 70, 229, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 24px rgba(79, 70, 229, 0.12), 0 4px 8px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 24px 48px rgba(79, 70, 229, 0.16), 0 8px 16px rgba(0, 0, 0, 0.04);
 }
 
 // Dark Theme

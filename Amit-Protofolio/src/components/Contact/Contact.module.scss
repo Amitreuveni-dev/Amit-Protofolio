@@ -8,6 +8,13 @@
     var(--color-bg-primary) 100%
   );
   @include scroll-section;
+
+  // Modern gradient for light theme
+  [data-theme='light'] & {
+    background:
+      radial-gradient(ellipse 60% 40% at 50% 100%, rgba(79, 70, 229, 0.06) 0%, transparent 50%),
+      linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+  }
 }
 
 .container {
@@ -52,12 +59,13 @@
   border: 2px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  @include transition(border-color, box-shadow, transform);
+  @include transition(border-color, box-shadow, transform, background-color);
 
   &:hover {
     border-color: var(--color-primary);
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.2);
+    transform: translateY(-4px);
+    background-color: var(--color-bg-secondary);
   }
 
   &:focus-visible {
@@ -113,13 +121,14 @@
   border: 2px solid var(--color-border);
   border-radius: var(--radius-full);
   text-decoration: none;
-  @include transition(border-color, color, transform, box-shadow);
+  @include transition(border-color, color, transform, box-shadow, background-color);
 
   &:hover {
-    color: var(--color-primary);
+    color: #ffffff;
+    background-color: var(--color-primary);
     border-color: var(--color-primary);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.35);
     text-decoration: none;
   }
 

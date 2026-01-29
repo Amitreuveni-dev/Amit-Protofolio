@@ -25,6 +25,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @include transition(background-color, color);
+
+  // Modern gradient background for light theme
+  [data-theme='light'] & {
+    background:
+      linear-gradient(135deg, rgba(79, 70, 229, 0.03) 0%, transparent 50%),
+      linear-gradient(225deg, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+      var(--color-bg-primary);
+  }
 }
 
 // Typography

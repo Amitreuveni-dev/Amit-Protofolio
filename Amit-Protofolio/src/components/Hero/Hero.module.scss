@@ -7,6 +7,14 @@
   overflow: hidden;
   padding: var(--spacing-3xl) 0;
   @include scroll-section;
+
+  // Modern mesh gradient for light theme
+  [data-theme='light'] & {
+    background:
+      radial-gradient(ellipse 80% 50% at 20% 40%, rgba(79, 70, 229, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 30% at 40% 80%, rgba(16, 185, 129, 0.04) 0%, transparent 50%);
+  }
 }
 
 .container {
@@ -100,12 +108,24 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   cursor: default;
-  @include transition(background-color, border-color, box-shadow);
+  @include transition(background-color, border-color, box-shadow, transform);
+
+  // Light theme enhancement
+  [data-theme='light'] & {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(250, 251, 255, 0.9) 100%);
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.06);
+  }
 
   &:hover {
     background-color: var(--color-bg-tertiary);
     border-color: var(--color-primary);
     box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+
+    [data-theme='light'] & {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(250, 251, 255, 1) 100%);
+      box-shadow: 0 8px 24px rgba(79, 70, 229, 0.12);
+    }
   }
 }
 
@@ -155,8 +175,9 @@
 
   &:hover {
     background-color: var(--color-primary-hover);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.4);
   }
 }
 
@@ -167,8 +188,9 @@
 
   &:hover {
     background-color: var(--color-primary);
-    color: var(--color-text-inverse);
-    transform: translateY(-2px);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.3);
   }
 }
 
@@ -198,6 +220,13 @@
   );
   border-radius: 50%;
   opacity: 0.1;
+
+  [data-theme='light'] & {
+    opacity: 0.35;
+    width: 320px;
+    height: 320px;
+    filter: blur(8px);
+  }
 }
 
 .decorCircleOuter {
