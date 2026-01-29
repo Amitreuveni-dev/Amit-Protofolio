@@ -31,7 +31,7 @@ const PROJECTS_DATA: Project[] = [
     id: 'wordle',
     title: 'Wordle Clone',
     description:
-      'A faithful recreation of the popular word-guessing game. Includes keyboard input, color-coded feedback, and game state persistence.',
+      'A faithful recreation of the popular word-guessing game built as a team project during a course. Includes keyboard input, color-coded feedback, and game state persistence.',
     technologies: ['React', 'TypeScript', 'Local Storage', 'CSS Animations'],
     Icon: Gamepad2,
     githubUrl: 'https://github.com/amitr/wordle',
