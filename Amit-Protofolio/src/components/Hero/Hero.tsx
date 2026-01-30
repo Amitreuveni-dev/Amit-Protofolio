@@ -2,6 +2,7 @@ import { motion, type Variants } from 'framer-motion';
 import { Code2, Database, Server, Globe, Layers, Terminal } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import styles from './Hero.module.scss';
+import profileImage from '../../assets/Profile-Picture.jpg';
 
 interface TechItem {
   name: string;
@@ -82,7 +83,9 @@ const Hero = (): React.JSX.Element => {
           </motion.div>
         </motion.div>
         <motion.div className={styles.decoration} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.5 }}>
-          <div className={styles.decorCircle} />
+          <div className={styles.decorCircle}>
+            <img src={profileImage} alt="Amit Reuveni" className={styles.profileImage} />
+          </div>
           <div className={styles.decorCircleOuter} />
         </motion.div>
       </div>

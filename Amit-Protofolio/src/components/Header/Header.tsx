@@ -73,7 +73,9 @@ const Header = (): React.JSX.Element => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <a href="#hero" className={styles.logo} aria-label="Go to home" onClick={(e) => scrollToSection(e, '#hero')}>AR</a>
+        <a href="#hero" className={styles.logo} aria-label="Go to home" onClick={(e) => scrollToSection(e, '#hero')}>
+          AR
+        </a>
 
         {/* Desktop Navigation */}
         <nav className={styles.nav} aria-label="Main navigation">
