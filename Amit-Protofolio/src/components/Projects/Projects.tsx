@@ -39,13 +39,14 @@ const PROJECTS_DATA: Project[] = [
     gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
   },
   {
-    id: 'dream-journal',
-    title: 'Dream Journal',
+    id: 'night log',
+    title: 'NightLog',
     description:
       'A personal dream logging application with mood tracking, dream pattern analysis, and searchable entries. Built with privacy in mind.',
     technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
     Icon: BookHeart,
     githubUrl: 'https://github.com/amitr/dream-journal',
+    liveUrl: "https://nightlog.netlify.app/",
     gradient: 'linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%)',
   },
 ];
