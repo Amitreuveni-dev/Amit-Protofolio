@@ -24,7 +24,7 @@ const PROJECTS_DATA: Project[] = [
     technologies: ['React', 'TypeScript', 'Supabase', 'CSS Modules'],
     Icon: Sparkles,
     githubUrl: 'https://github.com/Amitreuveni-dev/Amit-Projects/tree/main/Share-A-Fact',
-    liveUrl: 'https://share-a-fact-1.netlify.app/',
+    liveUrl: 'https://share-a-facts.netlify.app/',
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
   },
   {
@@ -42,7 +42,7 @@ const PROJECTS_DATA: Project[] = [
     id: 'night log',
     title: 'NightLog',
     description:
-      'A personal dream logging application with mood tracking, dream pattern analysis, and searchable entries. Built with privacy in mind.',
+      'A Full stack project and a personal dream logging application with mood tracking, dream pattern analysis, and searchable entries. Built with privacy in mind.',
     technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
     Icon: BookHeart,
     githubUrl: 'https://github.com/amitr/dream-journal',
