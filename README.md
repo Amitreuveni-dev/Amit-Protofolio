@@ -3,7 +3,7 @@
 Personal portfolio built with React + Vite.
 
 ## Live
-https://amitreuveni-dev.github.io/Amit-Protofolio/
+https://amitreuveni-dev.github.io/Amit-Portfolio/
 
 ## Tech
 - React
