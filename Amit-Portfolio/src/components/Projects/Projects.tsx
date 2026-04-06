@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView, type Variants } from 'framer-motion';
-import { ExternalLink, Github, Sparkles, Gamepad2, BookHeart } from 'lucide-react';
+import { ExternalLink, Github, Sparkles, Gamepad2, BookHeart, BrainCircuit, CalendarDays } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import styles from './Projects.module.scss';
 
@@ -17,16 +17,38 @@ interface Project {
 
 const PROJECTS_DATA: Project[] = [
   {
-    id: 'share-a-fact',
-    title: 'Share A Fact',
+    id: 'syncromind-ai',
+    title: 'SyncroMind AI',
     description:
-      'A collaborative platform where users can share interesting facts with the community. Features voting system, category filtering, and real-time updates.',
-    technologies: ['React', 'TypeScript', 'Supabase', 'CSS Modules'],
-    Icon: Sparkles,
-    githubUrl: 'https://github.com/Amitreuveni-dev/Amit-Projects/tree/main/Share-A-Fact',
-    liveUrl: 'https://share-a-facts.netlify.app/',
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    'An advanced AI-powered task management ecosystem. Features an intelligent project generator, a specialized "Focus Room" for deep work, and an AI Mind Center that analyzes project health and provides actionable insights. Built for high-performance execution.',
+    technologies: ['Next.js 16', 'Tailwind v4', 'Prisma', 'MySQL', 'Vercel AI SDK', 'Framer Motion'],
+    Icon: BrainCircuit,
+    githubUrl: 'https://github.com/Amitreuveni-dev/nextjs-mysql-task-manager',
+    liveUrl: 'https://nextjs-task-manager-omega.vercel.app/login?callbackUrl=https%3A%2F%2Fnextjs-task-manager-omega.vercel.app%2Fdashboard',
+    gradient: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
   },
+  {
+    id: 'night log',
+    title: 'NightLog',
+    description:
+    'A Full stack project and a personal dream logging application with mood tracking, dream pattern analysis, and searchable entries. Built with privacy in mind.',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+    Icon: BookHeart,
+    githubUrl: 'https://github.com/amitr/dream-journal',
+    liveUrl: "https://nightlog.netlify.app/",
+    gradient: 'linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%)',
+  },
+  {
+  id: 'sidur-app',
+  title: 'Sidur - AI Shift Management',
+  description: 
+    'A smart workforce management platform designed for seamless shift scheduling. It features an AI-driven availability parser that interprets complex employee requests into structured data, ensuring optimal coverage and zero scheduling conflicts.',
+  technologies: ['Next.js 16', 'Tailwind v4', 'Prisma', 'MySQL', 'AI Availability Parser'],
+  Icon: CalendarDays,
+  githubUrl: 'https://github.com/Amitreuveni-dev/Sidur',
+  liveUrl: 'https://sidur.vercel.app/',
+  gradient: 'linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%)',
+},
   {
     id: 'wordle',
     title: 'Wordle Clone',
@@ -39,16 +61,16 @@ const PROJECTS_DATA: Project[] = [
     gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
   },
   {
-    id: 'night log',
-    title: 'NightLog',
+    id: 'share-a-fact',
+    title: 'Share A Fact',
     description:
-      'A Full stack project and a personal dream logging application with mood tracking, dream pattern analysis, and searchable entries. Built with privacy in mind.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-    Icon: BookHeart,
-    githubUrl: 'https://github.com/amitr/dream-journal',
-    liveUrl: "https://nightlog.netlify.app/",
-    gradient: 'linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%)',
-  },
+      'A collaborative platform where users can share interesting facts with the community. Features voting system, category filtering, and real-time updates.',
+    technologies: ['React', 'TypeScript', 'Supabase', 'CSS Modules'],
+    Icon: Sparkles,
+    githubUrl: 'https://github.com/Amitreuveni-dev/Amit-Projects/tree/main/Share-A-Fact',
+    liveUrl: 'https://share-a-facts.netlify.app/',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+  }
 ];
 
 const containerVariants: Variants = {

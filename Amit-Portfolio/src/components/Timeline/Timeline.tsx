@@ -69,7 +69,7 @@ const TIMELINE_DATA: TimelineEvent[] = [
     subtitle: 'INT College',
     description:
       'Comprehensive training in modern web technologies including React, Node.js, TypeScript, and database management. Building real-world applications with industry best practices.',
-    period: 'Nov 2024 - Jan 2026',
+    period: 'Apr 2024 - Jan 2026',
     highlights: ['React & TypeScript', 'Node.js & Express', 'MongoDB & SQL', 'REST APIs'],
     Icon: GraduationCap,
   },
