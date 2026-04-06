@@ -43,7 +43,7 @@ const PROJECTS_DATA: Project[] = [
   title: 'Sidur - AI Shift Management',
   description: 
     'A smart workforce management platform designed for seamless shift scheduling. It features an AI-driven availability parser that interprets complex employee requests into structured data, ensuring optimal coverage and zero scheduling conflicts.',
-  technologies: ['Next.js 16', 'Tailwind v4', 'Prisma', 'MySQL', 'AI Availability Parser'],
+  technologies: ['Next.js 16', 'Tailwind v4', 'AI Availability Parser'],
   Icon: CalendarDays,
   githubUrl: 'https://github.com/Amitreuveni-dev/Sidur',
   liveUrl: 'https://sidur.vercel.app/',
