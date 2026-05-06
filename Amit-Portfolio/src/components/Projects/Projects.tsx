@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView, type Variants } from 'framer-motion';
-import { ExternalLink, Github, Sparkles, Gamepad2, BookHeart, BrainCircuit, CalendarDays } from 'lucide-react';
+import { ExternalLink, Github, Sparkles, Gamepad2, BookHeart, BrainCircuit, CalendarDays, Shield } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import styles from './Projects.module.scss';
 
@@ -16,6 +16,17 @@ interface Project {
 }
 
 const PROJECTS_DATA: Project[] = [
+  {
+    id: 'milu-ai',
+    title: 'MiluAI',
+    description:
+      'An AI-powered chat assistant for Israeli reservists, providing instant answers about military reserve rights, compensation, benefits, and entitlements in plain Hebrew. Features streaming responses, glassmorphism design, RTL support, PWA installable, issue reporting with email notifications, and full analytics. Privacy-first architecture with rate limiting and session replay.',
+    technologies: ['Next.js 16', 'TypeScript', 'Tailwind CSS', 'Vercel AI SDK', 'Claude API', 'MongoDB', 'Resend', 'PostHog', 'Sentry', 'PWA'],
+    Icon: Shield,
+    githubUrl: 'https://github.com/Amitreuveni-dev/milu-ai',
+    liveUrl: 'https://milu-ai.vercel.app',
+    gradient: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+  },
   {
     id: 'syncromind-ai',
     title: 'SyncroMind AI',
