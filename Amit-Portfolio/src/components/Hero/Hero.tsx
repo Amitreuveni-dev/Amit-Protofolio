@@ -63,7 +63,7 @@ const Hero = (): React.JSX.Element => {
           <motion.h1 className={styles.title} variants={itemVariants}>Amit Reuveni</motion.h1>
           <motion.h2 className={styles.subtitle} variants={itemVariants}>Full Stack Developer</motion.h2>
           <motion.p className={styles.description} variants={itemVariants}>
-            Fast learning and highly motivated developer with a passion for building modern web applications. Focused on writing clean, maintainable code that delivers exceptional user experiences.
+            Combat engineer turned full-stack developer. I ship fast, write clean code, and build things that matter — currently open to full-time engineering roles.
           </motion.p>
           <motion.div className={styles.techStack} variants={itemVariants}>
             <span className={styles.techLabel}>Tech Stack</span>
@@ -84,7 +84,7 @@ const Hero = (): React.JSX.Element => {
         </motion.div>
         <motion.div className={styles.decoration} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.5 }}>
           <div className={styles.decorCircle}>
-            <img src={profileImage} alt="Amit Reuveni" className={styles.profileImage} />
+            <img src={profileImage} alt="Amit Reuveni" className={styles.profileImage} width={280} height={280} fetchPriority="high" loading="eager" />
           </div>
           <div className={styles.decorCircleOuter} />
         </motion.div>

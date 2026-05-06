@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView, type Variants } from 'framer-motion';
-import { ExternalLink, Github, Sparkles, Gamepad2, BookHeart, BrainCircuit, CalendarDays, Shield } from 'lucide-react';
+import { ExternalLink, Github, Sparkles, Gamepad2, BrainCircuit, CalendarDays, Shield } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import styles from './Projects.module.scss';
 
@@ -24,7 +24,7 @@ const PROJECTS_DATA: Project[] = [
     technologies: ['Next.js 16', 'TypeScript', 'Tailwind CSS', 'Vercel AI SDK', 'Claude API', 'MongoDB', 'Resend', 'PostHog', 'Sentry', 'PWA'],
     Icon: Shield,
     githubUrl: 'https://github.com/Amitreuveni-dev/milu-ai',
-    liveUrl: 'https://milu-ai.vercel.app',
+    liveUrl: 'https://milu-ai.vercel.app/',
     gradient: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
   },
   {
@@ -37,17 +37,6 @@ const PROJECTS_DATA: Project[] = [
     githubUrl: 'https://github.com/Amitreuveni-dev/nextjs-mysql-task-manager',
     liveUrl: 'https://nextjs-task-manager-omega.vercel.app/login?callbackUrl=https%3A%2F%2Fnextjs-task-manager-omega.vercel.app%2Fdashboard',
     gradient: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
-  },
-  {
-    id: 'night log',
-    title: 'NightLog',
-    description:
-    'A Full stack project and a personal dream logging application with mood tracking, dream pattern analysis, and searchable entries. Built with privacy in mind.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-    Icon: BookHeart,
-    githubUrl: 'https://github.com/amitr/dream-journal',
-    liveUrl: "https://nightlog.netlify.app/",
-    gradient: 'linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%)',
   },
   {
   id: 'sidur-app',
